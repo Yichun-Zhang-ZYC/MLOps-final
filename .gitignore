@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.ipynb_checkpoints/
+mlruns/
+models/*
+artifacts/*
+reports/*
+data/
+*.pyc
+!models/.gitkeep
+!artifacts/.gitkeep
+!reports/.gitkeep
+.env

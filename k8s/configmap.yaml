@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: credit-default-api-config
+  namespace: mlops-final
+data:
+  MODEL_PATH: /app/models/credit_default_pipeline.joblib

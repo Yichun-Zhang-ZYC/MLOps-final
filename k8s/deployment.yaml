@@ -1,0 +1,43 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: credit-default-api
+  namespace: mlops-final
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: credit-default-api
+  template:
+    metadata:
+      labels:
+        app: credit-default-api
+    spec:
+      containers:
+        - name: api
+          image: ghcr.io/yichun-zhang-zyc/mlops-final:latest
+          imagePullPolicy: Always
+          envFrom:
+            - configMapRef:
+                name: credit-default-api-config
+          ports:
+            - containerPort: 8000
+          livenessProbe:
+            httpGet:
+              path: /health
+              port: 8000
+            initialDelaySeconds: 10
+            periodSeconds: 15
+          readinessProbe:
+            httpGet:
+              path: /health
+              port: 8000
+            initialDelaySeconds: 5
+            periodSeconds: 10
+          resources:
+            requests:
+              cpu: "100m"
+              memory: "256Mi"
+            limits:
+              cpu: "500m"
+              memory: "512Mi"
