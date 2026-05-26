@@ -11,4 +11,8 @@ data/
 !models/.gitkeep
 !artifacts/.gitkeep
 !reports/.gitkeep
+!models/credit_default_pipeline.joblib
+!artifacts/flaml.log
+!reports/test_monitoring_report.html
+!reports/changed_test_monitoring_report.html
 .env
