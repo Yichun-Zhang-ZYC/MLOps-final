@@ -1,0 +1,20 @@
+Task mode: create
+Primary deck-profile: engineering-platform
+Secondary profile gates: strategy-leadership
+Required proof objects:
+- Architecture and workflow map for training to deployment
+- Metric evidence for original vs changed test data
+- Product proof for FastAPI, Docker, Kubernetes, GitHub Actions, and MLflow integration
+- Reliability and deployment validation summary
+Source and asset requirements:
+- Use repository outputs from notebook, model artifact, monitoring reports, and workflow files
+- Use locally generated charts for class balance and metric comparison
+Brand and authenticity constraints:
+- Do not fabricate third-party logos; use repo name and plain-text GitHub references
+- Keep technical file paths and workflow names exact
+QA gates:
+- Every slide needs one claim and one proof object
+- Contact sheet should show varied rhythm, not repeated bullet-only slides
+- Must explicitly cover both assignment requirements and added MLOps stack
+Known missing inputs:
+- Final member names and exact contribution mapping

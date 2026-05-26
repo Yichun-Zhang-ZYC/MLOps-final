@@ -1,0 +1,138 @@
+{
+  "output": "/Users/yichunzhang/Desktop/0uchi_courses/2MLOps/MLOps/final/outputs/manual-20260526-mlops-presentation/output/mlops-final-presentation.pptx",
+  "outputBytes": 132800,
+  "slideCount": 12,
+  "slideSize": {
+    "width": 1280,
+    "height": 720
+  },
+  "previewDir": "/Users/yichunzhang/Desktop/0uchi_courses/2MLOps/MLOps/final/outputs/manual-20260526-mlops-presentation/preview",
+  "previewPaths": [
+    "/Users/yichunzhang/Desktop/0uchi_courses/2MLOps/MLOps/final/outputs/manual-20260526-mlops-presentation/preview/slide-01.png",
+    "/Users/yichunzhang/Desktop/0uchi_courses/2MLOps/MLOps/final/outputs/manual-20260526-mlops-presentation/preview/slide-02.png",
+    "/Users/yichunzhang/Desktop/0uchi_courses/2MLOps/MLOps/final/outputs/manual-20260526-mlops-presentation/preview/slide-03.png",
+    "/Users/yichunzhang/Desktop/0uchi_courses/2MLOps/MLOps/final/outputs/manual-20260526-mlops-presentation/preview/slide-04.png",
+    "/Users/yichunzhang/Desktop/0uchi_courses/2MLOps/MLOps/final/outputs/manual-20260526-mlops-presentation/preview/slide-05.png",
+    "/Users/yichunzhang/Desktop/0uchi_courses/2MLOps/MLOps/final/outputs/manual-20260526-mlops-presentation/preview/slide-06.png",
+    "/Users/yichunzhang/Desktop/0uchi_courses/2MLOps/MLOps/final/outputs/manual-20260526-mlops-presentation/preview/slide-07.png",
+    "/Users/yichunzhang/Desktop/0uchi_courses/2MLOps/MLOps/final/outputs/manual-20260526-mlops-presentation/preview/slide-08.png",
+    "/Users/yichunzhang/Desktop/0uchi_courses/2MLOps/MLOps/final/outputs/manual-20260526-mlops-presentation/preview/slide-09.png",
+    "/Users/yichunzhang/Desktop/0uchi_courses/2MLOps/MLOps/final/outputs/manual-20260526-mlops-presentation/preview/slide-10.png",
+    "/Users/yichunzhang/Desktop/0uchi_courses/2MLOps/MLOps/final/outputs/manual-20260526-mlops-presentation/preview/slide-11.png",
+    "/Users/yichunzhang/Desktop/0uchi_courses/2MLOps/MLOps/final/outputs/manual-20260526-mlops-presentation/preview/slide-12.png"
+  ],
+  "layoutDir": "/Users/yichunzhang/Desktop/0uchi_courses/2MLOps/MLOps/final/outputs/manual-20260526-mlops-presentation/layout",
+  "layoutResults": [
+    {
+      "layoutPath": "/Users/yichunzhang/Desktop/0uchi_courses/2MLOps/MLOps/final/outputs/manual-20260526-mlops-presentation/layout/slide-01.layout.json"
+    },
+    {
+      "layoutPath": "/Users/yichunzhang/Desktop/0uchi_courses/2MLOps/MLOps/final/outputs/manual-20260526-mlops-presentation/layout/slide-02.layout.json"
+    },
+    {
+      "layoutPath": "/Users/yichunzhang/Desktop/0uchi_courses/2MLOps/MLOps/final/outputs/manual-20260526-mlops-presentation/layout/slide-03.layout.json"
+    },
+    {
+      "layoutPath": "/Users/yichunzhang/Desktop/0uchi_courses/2MLOps/MLOps/final/outputs/manual-20260526-mlops-presentation/layout/slide-04.layout.json"
+    },
+    {
+      "layoutPath": "/Users/yichunzhang/Desktop/0uchi_courses/2MLOps/MLOps/final/outputs/manual-20260526-mlops-presentation/layout/slide-05.layout.json"
+    },
+    {
+      "layoutPath": "/Users/yichunzhang/Desktop/0uchi_courses/2MLOps/MLOps/final/outputs/manual-20260526-mlops-presentation/layout/slide-06.layout.json"
+    },
+    {
+      "layoutPath": "/Users/yichunzhang/Desktop/0uchi_courses/2MLOps/MLOps/final/outputs/manual-20260526-mlops-presentation/layout/slide-07.layout.json"
+    },
+    {
+      "layoutPath": "/Users/yichunzhang/Desktop/0uchi_courses/2MLOps/MLOps/final/outputs/manual-20260526-mlops-presentation/layout/slide-08.layout.json"
+    },
+    {
+      "layoutPath": "/Users/yichunzhang/Desktop/0uchi_courses/2MLOps/MLOps/final/outputs/manual-20260526-mlops-presentation/layout/slide-09.layout.json"
+    },
+    {
+      "layoutPath": "/Users/yichunzhang/Desktop/0uchi_courses/2MLOps/MLOps/final/outputs/manual-20260526-mlops-presentation/layout/slide-10.layout.json"
+    },
+    {
+      "layoutPath": "/Users/yichunzhang/Desktop/0uchi_courses/2MLOps/MLOps/final/outputs/manual-20260526-mlops-presentation/layout/slide-11.layout.json"
+    },
+    {
+      "layoutPath": "/Users/yichunzhang/Desktop/0uchi_courses/2MLOps/MLOps/final/outputs/manual-20260526-mlops-presentation/layout/slide-12.layout.json"
+    }
+  ],
+  "contactSheet": "/Users/yichunzhang/Desktop/0uchi_courses/2MLOps/MLOps/final/outputs/manual-20260526-mlops-presentation/output/contact-sheet.png",
+  "slides": [
+    {
+      "index": 1,
+      "requestedSlideNumber": 1,
+      "modulePath": "/Users/yichunzhang/Desktop/0uchi_courses/2MLOps/MLOps/final/outputs/manual-20260526-mlops-presentation/slides/slide-01.mjs",
+      "exportName": "addSlide"
+    },
+    {
+      "index": 2,
+      "requestedSlideNumber": 2,
+      "modulePath": "/Users/yichunzhang/Desktop/0uchi_courses/2MLOps/MLOps/final/outputs/manual-20260526-mlops-presentation/slides/slide-02.mjs",
+      "exportName": "addSlide"
+    },
+    {
+      "index": 3,
+      "requestedSlideNumber": 3,
+      "modulePath": "/Users/yichunzhang/Desktop/0uchi_courses/2MLOps/MLOps/final/outputs/manual-20260526-mlops-presentation/slides/slide-03.mjs",
+      "exportName": "addSlide"
+    },
+    {
+      "index": 4,
+      "requestedSlideNumber": 4,
+      "modulePath": "/Users/yichunzhang/Desktop/0uchi_courses/2MLOps/MLOps/final/outputs/manual-20260526-mlops-presentation/slides/slide-04.mjs",
+      "exportName": "addSlide"
+    },
+    {
+      "index": 5,
+      "requestedSlideNumber": 5,
+      "modulePath": "/Users/yichunzhang/Desktop/0uchi_courses/2MLOps/MLOps/final/outputs/manual-20260526-mlops-presentation/slides/slide-05.mjs",
+      "exportName": "addSlide"
+    },
+    {
+      "index": 6,
+      "requestedSlideNumber": 6,
+      "modulePath": "/Users/yichunzhang/Desktop/0uchi_courses/2MLOps/MLOps/final/outputs/manual-20260526-mlops-presentation/slides/slide-06.mjs",
+      "exportName": "addSlide"
+    },
+    {
+      "index": 7,
+      "requestedSlideNumber": 7,
+      "modulePath": "/Users/yichunzhang/Desktop/0uchi_courses/2MLOps/MLOps/final/outputs/manual-20260526-mlops-presentation/slides/slide-07.mjs",
+      "exportName": "addSlide"
+    },
+    {
+      "index": 8,
+      "requestedSlideNumber": 8,
+      "modulePath": "/Users/yichunzhang/Desktop/0uchi_courses/2MLOps/MLOps/final/outputs/manual-20260526-mlops-presentation/slides/slide-08.mjs",
+      "exportName": "addSlide"
+    },
+    {
+      "index": 9,
+      "requestedSlideNumber": 9,
+      "modulePath": "/Users/yichunzhang/Desktop/0uchi_courses/2MLOps/MLOps/final/outputs/manual-20260526-mlops-presentation/slides/slide-09.mjs",
+      "exportName": "addSlide"
+    },
+    {
+      "index": 10,
+      "requestedSlideNumber": 10,
+      "modulePath": "/Users/yichunzhang/Desktop/0uchi_courses/2MLOps/MLOps/final/outputs/manual-20260526-mlops-presentation/slides/slide-10.mjs",
+      "exportName": "addSlide"
+    },
+    {
+      "index": 11,
+      "requestedSlideNumber": 11,
+      "modulePath": "/Users/yichunzhang/Desktop/0uchi_courses/2MLOps/MLOps/final/outputs/manual-20260526-mlops-presentation/slides/slide-11.mjs",
+      "exportName": "addSlide"
+    },
+    {
+      "index": 12,
+      "requestedSlideNumber": 12,
+      "modulePath": "/Users/yichunzhang/Desktop/0uchi_courses/2MLOps/MLOps/final/outputs/manual-20260526-mlops-presentation/slides/slide-12.mjs",
+      "exportName": "addSlide"
+    }
+  ]
+}
