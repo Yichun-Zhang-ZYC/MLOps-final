@@ -250,23 +250,6 @@ source .venv/bin/activate
 pytest
 ```
 
-## Presentation checklist
-
-Your PPT should now be able to show:
-- EDA charts from the notebook
-- why `ROC-AUC` was chosen
-- the MLflow + FLAML pipeline
-- AutoML results and the selected `LightGBM` model
-- original test metrics
-- changed test metrics
-- monitoring HTML reports
-- FastAPI serving layer
-- Docker and Compose deployment
-- Kubernetes deployment design
-- GitHub Actions CI/CD pipeline
-- GitHub repository link
-- member contribution slide
-
 ## Member contribution template
 
 Fill this in before submission:
@@ -274,4 +257,4 @@ Fill this in before submission:
 - Member 1: notebook EDA, metric choice, and AutoML analysis
 - Member 2: FastAPI serving and Docker packaging
 - Member 3: Kubernetes deployment and GitHub Actions CI/CD
-- Member 4: monitoring analysis, changed-test experiment, and presentation
+- Member 4: monitoring analysis and changed-test experiment
