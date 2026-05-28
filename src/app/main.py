@@ -1,11 +1,13 @@
 import os
+from io import BytesIO
 from functools import lru_cache
 from pathlib import Path
 
 import joblib
 import pandas as pd
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, File, Form, HTTPException, UploadFile
 from pydantic import BaseModel, Field
+from sklearn.metrics import accuracy_score, f1_score, roc_auc_score
 
 
 MODEL_PATH = Path(os.getenv("MODEL_PATH", "models/credit_default_pipeline.joblib"))
@@ -97,6 +99,55 @@ def predict_batch(request: BatchPredictionRequest):
         }
     except FileNotFoundError as exc:
         raise HTTPException(status_code=500, detail=str(exc)) from exc
+
+
+@app.post("/evaluate-file")
+async def evaluate_file(
+    file: UploadFile = File(...),
+    target_column: str = Form("target"),
+):
+    if not file.filename.lower().endswith(".csv"):
+        raise HTTPException(status_code=400, detail="Please upload a CSV file.")
+
+    try:
+        contents = await file.read()
+        frame = pd.read_csv(BytesIO(contents))
+    except Exception as exc:
+        raise HTTPException(status_code=400, detail=f"Could not read CSV file: {exc}") from exc
+
+    missing_columns = [column for column in FEATURE_COLUMNS if column not in frame.columns]
+    if missing_columns:
+        raise HTTPException(
+            status_code=400,
+            detail=f"CSV is missing required feature columns: {missing_columns}",
+        )
+
+    if target_column not in frame.columns:
+        raise HTTPException(
+            status_code=400,
+            detail=f"CSV is missing target column: {target_column}",
+        )
+
+    try:
+        model = load_model()
+        feature_frame = frame[FEATURE_COLUMNS]
+        predictions = model.predict(feature_frame).tolist()
+        probabilities = model.predict_proba(feature_frame)[:, 1]
+        labels = frame[target_column]
+        return {
+            "filename": file.filename,
+            "row_count": len(feature_frame),
+            "target_column": target_column,
+            "metrics": {
+                "roc_auc": float(roc_auc_score(labels, probabilities)),
+                "f1": float(f1_score(labels, predictions)),
+                "accuracy": float(accuracy_score(labels, predictions)),
+            },
+        }
+    except FileNotFoundError as exc:
+        raise HTTPException(status_code=500, detail=str(exc)) from exc
+    except ValueError as exc:
+        raise HTTPException(status_code=400, detail=f"Could not calculate metrics: {exc}") from exc
 
 
 @app.get("/sample-payload")

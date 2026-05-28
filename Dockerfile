@@ -8,6 +8,7 @@ RUN apt-get update \
 
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
+RUN pip uninstall -y multipart && pip install --no-cache-dir --force-reinstall python-multipart==0.0.12
 
 COPY src ./src
 COPY models ./models
